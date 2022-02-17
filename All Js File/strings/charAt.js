@@ -1,3 +1,5 @@
+document.write("<h2>Welcome to the charAt() related Programs</h2>");
+
 //1. Write a JavaScript program to check a given string contains 2 to 4 numbers of a specified character.
 const checkChar = (str, char) => {
   count = 0;
@@ -23,3 +25,5 @@ const check8 = (str) => {
 };
 
 console.log(check8("Bangladesh"));
+
+

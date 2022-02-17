@@ -154,3 +154,30 @@ const check4 = (a, b, c) => {
 console.log(check4(40, 60, 90));
 console.log(check4(20, 65, 90));
 console.log(check4(50, 70, 80));
+
+console.clear();
+
+//13 Write a JavaScript program to check two given integer values and return true if one of the number is 15 or if their sum or difference is 15.
+const numberTwo = (a, b) => {
+  const sum = a + b;
+  const diff = Math.abs(a - b);
+  console.log(sum);
+  console.log(diff);
+  if (a === 15 || b === 15 || sum === 15 || diff === 15) {
+    return true;
+  }
+  return false;
+};
+console.log(numberTwo(8, 7));
+
+// Write a JavaScript program to check two given non-negative integers that whether one of the number (not both) is multiple of 7 or 11
+const numMulti = (a, b) => {
+  if (!(a % 7 === 0 || a % 11 === 0) && (b % 11 === 0 || b % 7 === 0)) {
+    return a % 7 === 0 || a % 11 === 0 || b % 11 === 0 || b % 7 === 0;
+  }
+  return false;
+};
+
+console.log(numMulti(14, 20));
+console.log(numMulti(11, 2));
+console.log(numMulti(16, 20));
