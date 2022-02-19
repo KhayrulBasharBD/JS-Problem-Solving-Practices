@@ -181,3 +181,4 @@ const numMulti = (a, b) => {
 console.log(numMulti(14, 20));
 console.log(numMulti(11, 2));
 console.log(numMulti(16, 20));
+
